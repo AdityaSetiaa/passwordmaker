@@ -1,6 +1,8 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Jura:wght@300..700&display=swap');
+
 
 :root {
   --background: #ffffff;
@@ -9,7 +11,7 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
+    --background: #000000;
     --foreground: #ededed;
   }
 }
@@ -17,5 +19,62 @@
 body {
   color: var(--foreground);
   background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family:jura;
+  
+}
+#container {
+  border: 2px;
+  text-align: center;
+  padding: 20px;
+  height: 300px;
+  margin-top: 500px;
+  border-radius: 16px;
+  background-color: transparent;
+  box-shadow: 6px 6px 6px rgb(8, 8, 8);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  justify-content: space-between;
+ 
+}
+
+#container:hover{
+  border: 2px solid rgb(58, 53, 215);
+}
+
+
+
+#input-val{
+  text-align: center;
+  color: #000000;
+  padding: 4px;
+  border-top-left-radius: 12px;
+  border-bottom-left-radius: 12px;
+ 
+  margin-right: 4px ;
+  
+  
+}
+#input-val:hover{
+  box-shadow: 1px 1px lightblue;
+}
+
+
+#output{
+  display: flex;
+  text-align: center;
+  justify-items: center;
+  margin-top: 100px;
+ 
+}
+
+#btn{
+  border: #ededed;
+  padding: 4px 15px;
+  border-top-right-radius: 12px;
+  border-bottom-right-radius: 12px;
+  height: 38px;
+  margin-top: 2px;
+}
+#btn:hover{
+  opacity: 30%;
 }
